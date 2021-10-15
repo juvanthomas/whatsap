@@ -51,7 +51,7 @@ def sms_reply():
         if type(keyword) == str:
             token = log_in()
             HEADERS = {'X-Tableau-Auth': token}
-            r = requests.get(url=keyword, headers=HEADERS)
+            r = requests.get(url=keyword, headers=HEADERS,verify=False)
             object_name = str(uuid.uuid4())
             folder = "documents/"
             file_to_save = folder + object_name + '.png'
@@ -161,7 +161,7 @@ def log_in():
 
     head = {"Accept": "application/json"}
 
-    r = requests.post(url=URL, data=xml, headers=head)
+    r = requests.post(url=URL, data=xml, headers=head,verify=False)
 
     jsonfile = r.json()
     token = jsonfile["credentials"]["token"]
