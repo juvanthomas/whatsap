@@ -29,7 +29,7 @@ HEADERS = {'X-Tableau-Auth':token}
 re = requests.get(url=URL,headers=HEADERS)
 print(re.content)
 
-# file_to_save = 'dox1.pdf'
-# with open(file_to_save, 'wb') as f:
-#     f.write(re.content)
-#     print("Succesfully generated and saved the datasource in Local")
+file_to_save = 'dox1.pdf'
+with open(file_to_save, 'wb') as f:
+    f.write(re.content)
+    print("Succesfully generated and saved the datasource in Local")
