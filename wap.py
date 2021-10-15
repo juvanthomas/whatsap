@@ -9,9 +9,9 @@ import uuid
 
 # ~ data of the url of views
 dashboard_urls = {
-    'promotion': "http://15.206.141.108//api/3.9/sites/db5b55c4-d2e6-4949-9f9c-7bla46833211/views/1829f8ea-00a7-490f-b0cd-97fd55a6e710/image",
-    'ticket_sales': "http://15.206.141.108//api/3.9/sites/db5b55c4-d2e6-4949-9f9c-7bla46833211/views/250d968b-51ca-461d-a1a7-662e8f0aefb1/image",
-    'ticket_group': "http://15.206.141.108//api/3.9/sites/db5b55c4-d2e6-4949-9f9c-7bla46833211/views/8d28d450-e92a-4894-8707-2f57a73d3038/image"
+    'promotion': "https://analytics.expo2020.ae//api/3.9/sites/db5b55c4-d2e6-4949-9f9c-7bla46833211/views/c00b8afe-0f89-4b9f-aad4-9c2910830179/image",
+    'ticket_sales': "https://analytics.expo2020.ae//api/3.9/sites/db5b55c4-d2e6-4949-9f9c-7bla46833211/views/c00b8afe-0f89-4b9f-aad4-9c2910830179/image",
+    'ticket_group': "https://analytics.expo2020.ae//api/3.9/sites/db5b55c4-d2e6-4949-9f9c-7b1a46833211/views/c00b8afe-0f89-4b9f-aad4-9c2910830179/image"
 }
 
 maping = {"1": "promotion",
@@ -149,13 +149,13 @@ def log_in():
     ##########
 
     ##########
-    URL = "http://15.206.141.108/api/3.6/auth/signin"
+    URL = "https://analytics.expo2020.ae/api/3.6/auth/signin"
     # URL = "https://ask.beinex.com/api/3.6/auth/signin"
     # URL = "http://10.0.255.1:8080/api/3.6/auth/signin"         # : use 10.0.255.1  for Beinex5Ghz
 
     xml = """<tsRequest>
-            <credentials name="juvan" password="Juvan@123">
-            <site contentUrl="Expo" />
+            <credentials name="Tableau.admin" password="@963Password842">
+            <site contentUrl="" />
             </credentials>
             </tsRequest>"""
 
@@ -170,4 +170,4 @@ def log_in():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5005, debug=True)
+    app.run(host="0.0.0.0", port=8080, debug=True)
