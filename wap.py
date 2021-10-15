@@ -58,8 +58,8 @@ def sms_reply():
             with open(file_to_save, 'wb') as f:
                 f.write(r.content)
                 print("Succesfully generated and saved the datasource in Local")
-                print("http://3.6.141.16/" + file_to_save)
-            local_url = "http://3.6.141.16/" + file_to_save
+                print("https://analytics.expo2020.ae/" + file_to_save)
+            local_url = "https://analytics.expo2020.ae/" + file_to_save
             print(local_url)
             # uploader('whatsapp-doc', keyword, r.content)
             # url=create_presigned_url('whatsapp-doc',keyword)
