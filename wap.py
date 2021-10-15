@@ -9,9 +9,9 @@ import uuid
 
 # ~ data of the url of views
 dashboard_urls = {
-    'promotion': "http://15.206.141.108//api/3.9/sites/908f81e2-cb30-43a2-a7d0-461879aa9016/views/1829f8ea-00a7-490f-b0cd-97fd55a6e710/image",
-    'ticket_sales': "http://15.206.141.108//api/3.9/sites/908f81e2-cb30-43a2-a7d0-461879aa9016/views/250d968b-51ca-461d-a1a7-662e8f0aefb1/image",
-    'ticket_group': "http://15.206.141.108//api/3.9/sites/908f81e2-cb30-43a2-a7d0-461879aa9016/views/8d28d450-e92a-4894-8707-2f57a73d3038/image"
+    'promotion': "http://15.206.141.108//api/3.9/sites/db5b55c4-d2e6-4949-9f9c-7bla46833211/views/1829f8ea-00a7-490f-b0cd-97fd55a6e710/image",
+    'ticket_sales': "http://15.206.141.108//api/3.9/sites/db5b55c4-d2e6-4949-9f9c-7bla46833211/views/250d968b-51ca-461d-a1a7-662e8f0aefb1/image",
+    'ticket_group': "http://15.206.141.108//api/3.9/sites/db5b55c4-d2e6-4949-9f9c-7bla46833211/views/8d28d450-e92a-4894-8707-2f57a73d3038/image"
 }
 
 maping = {"1": "promotion",
