@@ -31,6 +31,10 @@ app = Flask(__name__)
 def hello():
     return "#########"
 
+@app.route("/test")
+def hello():
+    return "####   test   #####"
+
 @app.route("/get-image/<image_name>")
 def get_image(image_name):
     print(image_name)
