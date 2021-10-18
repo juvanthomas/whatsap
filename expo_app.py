@@ -32,7 +32,7 @@ def hello():
     return "#########"
 
 @app.route("/test")
-def hello():
+def test():
     return "####   test   #####"
 
 @app.route("/get-image/<image_name>")
